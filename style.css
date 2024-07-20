@@ -1,0 +1,112 @@
+@media screen and (max-width: 420px) {
+  .main-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  padding: 20px;
+  background-color: #17153b;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.input-pre {
+  height: 30px;
+  font-size: 14px;
+  border: none;
+  text-align: right;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-nex {
+  height: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  background-color: transparent;
+  color: #fff;
+
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.numbers {
+  padding: 0;
+  margin: 0;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #f0f0f0;
+  width: 40%;
+  height: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.equal {
+  width: 60%;
+  height: 80px;
+  background-color: #0000ff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.operator {
+  background-color: #fe9241;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.delete {
+  background-color: #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.clear {
+  background-color: #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+}
