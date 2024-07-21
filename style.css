@@ -32,7 +32,7 @@ body {
 .main-container {
   padding: 20px;
   padding-top: 40px;
-
+  border-radius: 10px;
   background-color: #17153b;
 }
 
@@ -49,7 +49,7 @@ body {
   font-size: 16px;
   border: none;
   text-align: right;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   font-weight: bold;
   border-radius: 8px 8px 0 0;
   background-color: transparent;
@@ -61,8 +61,8 @@ body {
   border: none;
   font-weight: bold;
   font-size: 24px;
-  text-align: right;
-  padding: 10px;
+  text-align: end;
+  padding: 10px 20px 10px 10px;
   border-radius: 0 0 8px 8px;
   background-color: transparent;
   color: #fff;
@@ -82,7 +82,7 @@ body {
   margin-top: 30px;
 }
 
-.btn {
+.btn, .delete, .operator, .clear {
   background-color: #f0f0f0;
   width: 40%;
   height: 80px;
@@ -90,6 +90,8 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
+
+
 
 .equal {
   width: 80%;
