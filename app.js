@@ -17,15 +17,23 @@ numbers.forEach((e) => {
 // Operator Inputs
 operators.forEach((e) => {
   e.addEventListener("click", () => {
+    if(inputNex.value.slice(-1) === e.textContent){
+        inputNex.value.slice(-1) = e.textContent;
+    }else {
     inputNex.value += e.textContent;
+    }
   });
 });
 
 // Evaluate Function
 equalBtn.addEventListener("click", () => {
   try {
+    if(!inputNex.value){
+        inputPre.value = '';
+    }else {
     evaluate = eval(inputNex.value);
     inputPre.value = evaluate;
+}
   } catch (error) {
     inputPre.value = "Error";
   }

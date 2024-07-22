@@ -11,6 +11,7 @@
     width: 100%;
     height: 100%;
     padding: 10px;
+    border-radius: 0 !important;
   }
 }
 
@@ -82,16 +83,42 @@ body {
   margin-top: 30px;
 }
 
-.btn, .delete, .operator, .clear {
+.btn,
+.delete,
+.operator,
+.clear {
   background-color: #f0f0f0;
   width: 40%;
   height: 80px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 16px;
   font-weight: bold;
+  transition: background-color 0.2s ease;
 }
 
+.btn:hover,
+.delete:hover,
+.operator:hover,
+.clear:hover {
+  cursor: pointer;
+}
 
+.btn:active {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.delete:active,
+.clear:active {
+  background-color: rgba(204, 204, 204, 0.8);
+}
+
+.equal:active {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.operator:active {
+  background-color: rgba(254, 146, 65, 0.8);
+}
 
 .equal {
   width: 80%;
